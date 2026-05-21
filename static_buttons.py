@@ -7,7 +7,7 @@ with open('dummy_data.json', 'r') as file:
     jira_dashboard_data = json.load(file)
 
 def get_llm_response(prompt):
-    api_endpoint = 'http://hkl20164337.hc.cloud.hk.hsbc:12234/v1/chat/completions'
+    api_endpoint = 'http://endpoint:12234/v1/chat/completions'
     access_token = 'eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJwcm9qZWN0X2lkIjoiZmFkZTk2ODg2ODJhYjRiMjY1OTZmZTUyNWRlYzY1MTIiLCJ1c2VyX25hbWUiOiIyYWNmNTI4YTY2YTAxOGUxZjMyZmY2MmUxZjk5OTVmNCIsInNjb3BlIjpbImFsbCJdLCJ1cmxMaXN0IjoiL3Rlc3QvcGVybWlzc2lvbiIsImV4cCI6MTczNjM1NzAxMSwiYXV0aG9yaXRpZXMiOlsiMmFjZjUyOGE2NmEwMThlMWYzMmZmNjJlMWY5OTk1ZjQiXSwianRpIjoiOThhMDUyMjktZmY0Ni00MjRlLTlkYjMtMmNlOTdkMTAzNWZjIiwia2V5IjoiMmFjZjUyOGE2NmEwMThlMWYzMmZmNjJlMWY5OTk1ZjQiLCJjbGllbnRfaWQiOiJjbGllbnQtYXBwIn0.Tz745gy37qqNEwatBQCl9j5ZkmM8sc055CrMmSjofQFa8RkWoKlFzg_d9MgxMbi4wHKRzYVDWVVDYjGk5ktrxrkPK46h8LYlEd5k16kKD13_WL4aZuk_eCbPWhkMIlsd0s7yvwLcnvWAfdRn4pcntdOXVZp-cyrdsbCTl8f2LeK2SFZXlJtVc8ROIWOjLjnoocfWjVadLzd3TEbLW7JPv_QaLL-qCHkq09AB2wuxKeIDjdVEuX7esCzbU7A5nnH2_NX9ZA6wYUpwHPmURZL1ZccMB_krrFOhf6kW9JMgtw5LJiYE8oft9F8AMSz_Vv0eBljVxJaZqMDcqpX6Diojzw'
     model = 'gpt-4-turbo-2024-04-09'
 
